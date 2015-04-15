@@ -1,0 +1,17 @@
+@media only screen {
+	header {
+		background-image: url(../../images/banners/banner_7.jpg);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		background-image: url(../../images/banners/banner_7_medium.jpg);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header {
+		background-image: url(../../images/banners/banner_7_small.jpg);
+	}
+}

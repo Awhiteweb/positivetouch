@@ -1,0 +1,97 @@
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen {
+}
+
+@media only screen and (max-width: 1024px) {
+	#navigation_bar {
+		font-size: 14px;
+	} 
+
+	#sub_navigation_bar {
+		font-size: 12px;
+	}
+}
+
+/* Used to alter styles for screens at least 768px wide. */
+@media only screen and (max-width: 768px) {
+	h1#site_title {
+		font-size: 36px;
+		line-height: 40px;
+		letter-spacing: -1px;
+		padding: 4px 8px;
+	}
+
+	h2#site_slogan {
+		font-size: 18px;
+		line-height: 24px;
+		position: relative;
+		letter-spacing: 0;
+	}
+
+	#navigation_bar,
+	#sub_navigation_bar,
+	#scroll_down_button {
+		display: none !important;
+	}
+
+	#mobile_navigation_toggle {
+	  display: block;
+	}
+}
+
+/* Used to alter styles for screens at least 480px wide. */
+@media only screen and (max-width: 480px) {
+	h1#site_title {
+		font-size: 26px;
+		line-height: 30px;
+		letter-spacing: 0px;
+	}
+
+	h2#site_slogan {
+		font-size: 16px;
+		line-height: 22px;
+		position: relative;
+		letter-spacing: 0;
+	}
+
+	.image-left {
+		float: none;
+		margin-right: 0;
+	}
+
+	.image-right {
+		float: none;
+		margin-left: 0;
+	}
+
+	#scroll_up_button {
+		width: 100%;
+		border-radius: 0px;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		float: none;
+		margin-top: 0;
+		z-index: 500;
+		margin-right: 0;
+	}
+}
+
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 769px) {
+	#mobile_navigation {
+	  display: none !important;
+	}
+}
+
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
