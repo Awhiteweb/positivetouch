@@ -7,8 +7,8 @@ require_once 'podio-api/PodioAPI.php';
 
 $client_id = "";
 $client_token = "";
-$app_id = ;
-$appToken = "";
+$app_id = 11599738;
+$appToken = "9efeb69a6a084e6a85b2c56d4ae8b839";
 
 Podio::setup( $client_id, $client_token );
 Podio::authenticate_with_app( $app_id, $appToken );
