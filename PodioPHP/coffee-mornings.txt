@@ -4,3 +4,14 @@ THMPuwkkpkui4VxTz3ahBfS4IcfmiC7w
 H9TXoRnDpI9kOzj0dbMlHzjQDWZKXOS8
 wAK3TB2kqe7Nrvjh5hyIuamngH8TcKRx
 thP1uA6MAt2lUlLuYFtll3y6ygU9Y5Uf
+
+example for links/embeds:
+
+$item = PodioItem::get_basic(123);
+$field_id = 'embed';
+$collection = $item->fields[$field_id]->values;
+
+foreach ($collection as $embed) {
+  print "Embed id: ".$embed->embed_id;
+  print "Embed URL: ".$embed->original_url;
+}
