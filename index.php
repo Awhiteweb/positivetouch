@@ -6,12 +6,13 @@
 
 		<!-- User defined head content such as meta tags and encoding options -->
 		
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="RapidWeaver" />
 		
 
 		<!-- User defined head content -->
 		<?php date_default_timezone_set('Europe/London'); ?>
+		<!-- <link rel="stylesheet" type="text/css" media="screen" href="resources/addthisevent.css" /> -->
 
 		<!-- Meta tags -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -53,28 +54,38 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/tesla/css/toggles/slogan_shadow.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/tesla/css/width/width_1060px.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/tesla/css/banner/banner_1.css" />
-		<script type="text/javascript" src="rw_common/themes/tesla/js/sidebar/sidebar_hidden.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/tesla/css/sidebar/sidebar_right.css" />
 		
 
 		<!-- User defined styles -->
 		<style type="text/css" media="all">#slideshow img {padding-top:10px;}
-.hidden {display:none;}
-.visible {display:block;}
-.floatcal {float:left;overflow:visible;}</style>
+			.hidden {display:none;}
+			.visible {display:block;}
+			.floatcal {float:left;overflow:visible;}
+			#sidebar_content { font:12px 'Lucida Grande', LucidaGrande, Verdana, sans-serif; }
+			.cal-event { padding:2px; margin-top: 3px;}
+			.cal-details { padding: 2px 2px 5px; border-bottom: 1px solid #FF00FF; margin-bottom: 3px; }
+			.cal-details:last-of-type { border-bottom: none; }
+			.cal-add { padding: 0 0 5px 10px; }
+		</style>
 
 		<!-- User defined javascript -->
+		
+		<!-- AddThisEvent -->
+		<script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
 		<script type="text/javascript">
-			 $mirage(document).ready(function () {
-  $mirage(function () {
-    $mirage('#slideshow img').each(function () {
-      $mirage('img').attr('style','max-width:300px;');
-    });
-  });
-  $mirage(function () {
-    $mirage('#slideshow').removeClass("hidden").addClass("visible");
-  });
-}); 
+			addthisevent.settings({
+				license    : "replace-with-your-licensekey",
+				css        : true,
+				outlook    : {show:true, text:"Outlook Calendar"},
+				google     : {show:true, text:"Google Calendar"},
+				yahoo      : {show:true, text:"Yahoo Calendar"},
+				outlookcom : {show:true, text:"Outlook.com"},
+				appleical  : {show:true, text:"Apple iCalendar"},
+				dropdown   : {order:"appleical,google,outlook,outlookcom,yahoo"}
+			});
 		</script>
+
 
 		<!-- Plugin injected code -->
 		
@@ -114,7 +125,7 @@
 				<div id="navigation_bar">
 					<div class="row site_width">
 						<div class="large-12 columns">
-							<nav id="top_navigation"><ul><li><a href="./" rel="" id="current">Home</a></li></ul></nav>
+							<nav id="top_navigation"></nav>
 						</div>
 					</div>
 				</div>
@@ -135,17 +146,20 @@
 			<i id="mobile_navigation_toggle_icon" class="fa fa-bars"></i>
 		</div>
 		<nav id="mobile_navigation">
-			<ul><li><a href="./" rel="" id="current">Home</a></li></ul>
+			
 		</nav>
 
 		<!-- Main Content area and sidebar -->
 		<div class="row site_width" id="container">
 			<section id="content"class="large-8 columns">
-				<div class="image-left"><img class="imageStyle" alt="positivetouchlogo" src="files/positivetouchlogo.png" width="259" height="240" /></div><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; ">Positive Touch was formed to support the RSCH SCBU Babies and their families.<br /><br />Babies and their families who have spent time at SCBU can use this page as a support network for all their issues, woes and mile stones that only SCBU graduates and their parents will understand </span><span style="font:12px Courier, mono; "><i class="fa fa-smile-o"></i><br /></span><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; "><br />So please feel free to post any questions that you feel need answering. You will be surprised how many families have gone or are going through the same thing you are and who will be more than happy to help!<br /><br />Keep up-to-date with us on </span><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; "><a href="https://www.facebook.com/Positivetouchgroup" rel="external" title="Positive Touch Facebook Page">Facebook </a></span><span style="font:12px Courier, mono; "><a href="https://www.facebook.com/Positivetouchgroup" rel="external" title="Positive Touch Facebook Page"><i class="fa fa-facebook-square"></i></a></span><span style="font:12px Courier, mono; "><br /></span>
+				<div class="image-left"><img class="imageStyle" alt="positivetouchlogo" src="index_files/positivetouchlogo.png" width="259" height="240" /></div><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; ">Positive Touch was formed to support the RSCH SCBU Babies and their families.<br /><br />Babies and their families who have spent time at SCBU can use this page as a support network for all their issues, woes and mile stones that only SCBU graduates and their parents will understand </span><span style="font:12px Courier, mono; "><i class="fa fa-smile-o"></i><br /></span><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; "><br />So please feel free to post any questions that you feel need answering. You will be surprised how many families have gone or are going through the same thing you are and who will be more than happy to help!<br /><br />Keep up-to-date with us on </span><span style="font:12px &#39;Lucida Grande&#39;, LucidaGrande, Verdana, sans-serif; "><a href="https://www.facebook.com/Positivetouchgroup" rel="external" title="Positive Touch Facebook Page">Facebook </a></span><span style="font:12px Courier, mono; "><a href="https://www.facebook.com/Positivetouchgroup" rel="external" title="Positive Touch Facebook Page"><i class="fa fa-facebook-square"></i></a></span><span style="font:12px Courier, mono; "><br /></span>
 			</section>
 			<aside id="sidebar" class="large-4 columns">
-				<h4 id="sidebar_title"></h4>
-				<div id="sidebar_content"></div>
+				<h4 id="sidebar_title">Upcoming Coffee Mornings</h4>
+				<div id="sidebar_content"><?php
+include('podio.php');
+?>
+</div>
 				<div id="archives">
 					
 				</div>

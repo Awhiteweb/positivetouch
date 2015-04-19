@@ -1,0 +1,104 @@
+/* General Colors */
+body {
+	background-color: #FFFFFF;
+	color: #313131;
+}
+
+a:link, a:visited {
+	color: #68467D;
+}
+
+a:hover, a:active {
+	color: #533864;
+}
+
+
+/* Site Title and Slogan */
+h1#site_title {
+	color: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+h2#site_slogan {
+	color: #FFFFFF;
+}
+
+#scroll_down_button {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+#scroll_up_button {
+	background-color: #313131;
+	color: #FFFFFF;
+}
+
+/* Navigation Colors */
+nav#top_navigation #current,
+nav#top_navigation a:hover,
+nav#top_navigation .currentAncestor {
+	background-color: #68467D;
+	color: #FFFFFF;
+}
+
+nav#top_navigation ul li a,
+nav#top_navigation ul li a:visited {
+	color: #FFFFFF;
+}
+
+#sub_navigation_bar {
+	background-color: #F7F7F7;
+}
+
+nav#sub_navigation ul li a,
+nav#sub_navigation ul li a:visited {
+	color: #7E7E7E;
+}
+
+nav#sub_navigation #current,
+nav#sub_navigation a:hover {
+	background-color: #E1E1E1;
+	color: #313131;
+}
+
+#mobile_navigation_toggle {
+	background-color: #68467D;
+	color: #FFFFFF;
+}
+
+
+
+/* Blog Colors */
+#sidebar ul.blog-tag-cloud li a,
+#sidebar ul.blog-tag-cloud li a:visited {
+	background-color: #68467D;
+	color: #FFFFFF;
+}
+
+#sidebar ul.blog-tag-cloud li a:hover,
+#sidebar ul.blog-tag-cloud li a:active {
+	background-color: #533864;
+}
+
+
+/* Photo Album */
+.photo-background {
+	background-color: #FFFFFF;	
+}
+
+
+
+/* Form Elements */
+.form-input-field:focus {
+  border-color: #68467D;
+} 
+
+.form-input-button {
+  background-color: #FFFFFF;
+}
+
+.form-input-button:hover {
+  border-color: #68467D;
+  background-color: #68467D;
+  color: #FFFFFF;
+}
